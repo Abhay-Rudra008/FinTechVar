@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.rudra.fintechvar.fragment.HomeFragment"
+        android:label="Home" />
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.rudra.fintechvar.fragment.StatsFragment"
+        android:label="stats" />
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.rudra.fintechvar.fragment.CategoryFragment"
+        android:label="Wallet" />
+
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.rudra.fintechvar.fragment.TransactionFragment"
+        android:label="Transaction" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.rudra.fintechvar.fragment.ProfileFragment"
+        android:label="Transaction" />
+</navigation>
+
+

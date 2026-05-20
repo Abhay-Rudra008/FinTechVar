@@ -1,0 +1,124 @@
+<resources>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#FFFFFF</item>
+
+        <item name="windowSplashScreenAnimatedIcon">@drawable/circle_mint_bg</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.FinTechVar</item>
+
+    </style>
+
+    <style name="Base.Theme.FinTechVar" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.FinTechVar" parent="Base.Theme.FinTechVar" />
+
+    <style name="Theme.FinTechVar.Adamina" parent="Base.Theme.FinTechVar">
+        <item name="android:fontFamily">@font/adamina</item>
+        <item name="fontFamily">@font/adamina</item>
+    </style>
+
+    <style name="Theme.FinTechVar.BesleySemiBold" parent="Base.Theme.FinTechVar">
+        <item name="android:fontFamily">@font/besley_semibold</item>
+        <item name="fontFamily">@font/besley_semibold</item>
+    </style>
+
+    <style name="Theme.FinTechVar.PoppinsMediumItalic" parent="Base.Theme.FinTechVar">
+        <item name="android:fontFamily">@font/poppins_medium_italic</item>
+        <item name="fontFamily">@font/poppins_medium_italic</item>
+    </style>
+
+    <style name="Theme.FinTechVar.RobotoCondensedBlack" parent="Base.Theme.FinTechVar">
+        <item name="android:fontFamily">@font/roboto_condensed_black</item>
+        <item name="fontFamily">@font/roboto_condensed_black</item>
+    </style>
+
+    <style name="Theme.FinTechVar.RobotoCondensedExtraBold" parent="Base.Theme.FinTechVar">
+        <item name="android:fontFamily">@font/roboto_condensed_extra_bold</item>
+        <item name="fontFamily">@font/roboto_condensed_extra_bold</item>
+    </style>
+
+    <style name="Theme.FinTechVar.RobotoCondensedExtraBoldItalic" parent="Base.Theme.FinTechVar">
+        <item name="android:fontFamily">@font/roboto_condensed_extra_bold_italic</item>
+        <item name="fontFamily">@font/roboto_condensed_extra_bold_italic</item>
+    </style>
+
+    <style name="ToggleButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/primary_green</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TabStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#757575</item>
+    </style>
+
+    <style name="CircleImage">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="LabelStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="InputStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ToggleTab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">#757575</item>
+    </style>
+
+    <style name="ShapeAppearance.Material3.Corner.Top" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">32dp</item>
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Material3.Corner.Full" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

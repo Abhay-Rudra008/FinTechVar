@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/iconContainer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="#64B5F6"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/transImage"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_salary" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/transName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Salary"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/iconContainer"
+        app:layout_constraintTop_toTopOf="@id/iconContainer" />
+
+    <TextView
+        android:id="@+id/dateAndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18:27 - April 30"
+        android:textColor="@color/textColorLight"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iconContainer"
+        app:layout_constraintStart_toStartOf="@id/transName"
+        app:layout_constraintTop_toBottomOf="@id/transName" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:background="#E0E0E0"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/tvDescription"
+        app:layout_constraintEnd_toStartOf="@id/transAmount"
+        app:layout_constraintStart_toEndOf="@+id/dateAndTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/transAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$4.000,00"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iconContainer"
+        app:layout_constraintEnd_toStartOf="@id/line2"
+        app:layout_constraintStart_toEndOf="@id/line1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:background="#E0E0E0"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iconContainer"
+        app:layout_constraintEnd_toStartOf="@id/transType"
+        app:layout_constraintStart_toEndOf="@id/transAmount"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/transType"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_income"
+        app:layout_constraintBottom_toTopOf="@+id/tvDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconContainer" />
+</androidx.constraintlayout.widget.ConstraintLayout>
