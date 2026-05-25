@@ -1,4 +1,5 @@
-# FinTechVar - Smart Personal Finance Manager
+
+# 💸 FinTechVar - Smart Personal Finance Manager
 
 ## 🚀 Overview
 A comprehensive, automated personal finance application built to track, analyze, and manage daily expenses and income. This project was developed independently to solve real-world transaction management problems, featuring advanced data visualization, natural language voice commands, and automated SMS receipt parsing.
@@ -19,7 +20,7 @@ A comprehensive, automated personal finance application built to track, analyze,
 * **Global Date Filters:** All charts and analytics views update dynamically based on the selected date range.
 
 ### 🤖 Automation & Intelligence
-* **Voice Command Integration:** Add transactions hands-free using natural language processing (e.g., "Khane me 200 rupaye kharch hue").
+* **Voice Command Integration:** Add transactions hands-free using natural language processing (e.g., *"Khane me 200 rupaye kharch hue"*).
 * **Automated SMS Parsing:** Automatically detects and logs transactions by reading and extracting data from incoming bank/payment SMS notifications.
 
 ## 🛠 Tech Stack
@@ -28,7 +29,11 @@ A comprehensive, automated personal finance application built to track, analyze,
 * **Database:** Room
 * **Libraries Used:** MPAndroidChart for charts
 
+## 🎥 Video Demonstration
+[🎥 Click here to watch the App Demo on YouTube](https://youtube.com/shorts/QD1CK-pDQf8?si=V7IOazSicUd3X2SH) 
+
 ## 📸 Screenshots
+
 <table>
   <tr>
     <td align="center"><a href="#"><img src="./photo/Dashboard.jpg" alt="Dashboard" style="width: 100%; max-width: 250px;"></a><br>Dashboard</td>
@@ -37,30 +42,34 @@ A comprehensive, automated personal finance application built to track, analyze,
     <td align="center"><a href="#"><img src="./photo/transcation_history.jpg" alt="Transaction History" style="width: 100%; max-width: 250px;"></a><br>History</td>
   </tr>
 </table>
-[🎥 Click here to watch the App Demo on YouTube]((https://youtube.com/shorts/QD1CK-pDQf8?si=V7IOazSicUd3X2SH))
 
 ## 💻 Installation and Setup
 
-   git clone this Repository
-  
+1. **Clone the repository:**
+```bash
+   git clone this Repo
 
-Launch Android Studio.
+```
 
-Select File > Open and choose the cloned project folder.
+2. **Open the project:**
+* Launch **Android Studio**.
+* Select `File > Open` and choose the cloned project folder.
 
-Sync Dependencies:
 
-Wait for Android Studio to automatically sync the Gradle files.
+3. **Sync Dependencies:**
+* Wait for Android Studio to automatically sync the Gradle files and download required libraries.
 
-Run the app:
 
-Connect a physical Android device or start an emulator.
+4. **Run the app:**
+* Connect a physical Android device or start an emulator.
+* Click the green **Run** button or press `Shift + F10`.
 
-Click the green Run button or press Shift + F10.
 
-🔐 Permissions Required
-Microphone: Required for voice command transaction addition.
 
-Read SMS: Required to securely parse bank notifications for automatic logging (processing is done entirely on-device).
+## 🔐 Permissions Required
 
-Storage / Media: Required to generate and save exported Excel files.
+Due to the advanced automation features, this app requires the following native Android permissions:
+
+* **Microphone:** Required for voice command transaction addition.
+* **Read SMS:** Required to securely parse bank notifications for automatic logging (data processing is done entirely on-device to ensure privacy).
+* **Storage / Media:** Required to generate, save, and export your transaction data to Excel files.
